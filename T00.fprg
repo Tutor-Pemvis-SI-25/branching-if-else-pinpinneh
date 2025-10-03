@@ -4,17 +4,17 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="Jeremi"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 09:25:35 AM"/>
+        <attribute name="saved" value="2025-10-03 09:43:07 AM"/>
         <attribute name="created" value="SmVyZW1pO0pFUkVNSTsyMDI1LTEwLTAxOzA4OjIzOjU0IFBNOzIzMjU="/>
-        <attribute name="edited" value="SmVyZW1pO0pFUkVNSTsyMDI1LTEwLTAzOzA5OjI1OjM1IEFNOzQ7MjQyNQ=="/>
+        <attribute name="edited" value="SmVyZW1pO0pFUkVNSTsyMDI1LTEwLTAzOzA5OjQzOjA3IEFNOzY7MjQyNg=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="bil1, bil2, bilganjil, bilgenap, perkalian, terbesar, penjumlahan, jenis, total1, total2" type="Integer" array="False" size=""/>
-            <output expression="&quot;Masukkan bilangan pertama:&quot;" newline="True"/>
+            <declare name="bil1, bil2, bilganjil, bilgenap, perkalian, terbesar, penjumlahan, jenis, total1, total2, sama" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bilangan pertama:&quot;" newline="True"/>
             <input variable="bil1"/>
-            <output expression="&quot;Masukkan bilangan kedua:&quot;" newline="True"/>
+            <output expression="&quot;Bilangan kedua:&quot;" newline="True"/>
             <input variable="bil2"/>
             <assign variable="total1" expression="bil1%2"/>
             <assign variable="total2" expression="bil2%2"/>
@@ -37,12 +37,29 @@
             <if expression="bil1&gt;bil2">
                 <then>
                     <assign variable="terbesar" expression="bil1"/>
-                    <output expression="&quot;bilangan pertama lebih besar&quot;&amp;terbesar" newline="True"/>
+                    <output expression="&quot;Bilangan kedua lebih besar&quot;&amp;terbesar" newline="True"/>
                 </then>
                 <else>
                     <assign variable="terbesar" expression="bil2"/>
-                    <output expression="&quot;bilangan kedua lebih besar&quot;&amp;terbesar" newline="True"/>
+                    <output expression="&quot;Bilangan kedua lebih besar&quot;&amp;terbesar" newline="True"/>
                 </else>
+            </if>
+            <if expression="bil1=bil2">
+                <then>
+                    <assign variable="sama" expression="bil1"/>
+                    <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="sama" expression="bil2"/>
+                    <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="total1==0 and total2==0">
+                <then>
+                    <assign variable="penjumlahan" expression="bil1+bil2"/>
+                    <output expression="&quot;hasil penjumlahan: &quot; &amp;penjumlahan" newline="True"/>
+                </then>
+                <else/>
             </if>
             <if expression="total1==1 and total2==1">
                 <then>
