@@ -1,5 +1,3 @@
-public class T00 {
-
 import java.util.*;
 import java.lang.Math;
 
