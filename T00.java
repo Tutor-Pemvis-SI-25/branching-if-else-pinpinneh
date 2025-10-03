@@ -5,19 +5,17 @@ public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b;
-
-        a = Integer.parseInt(input.nextLine());
-        b = Integer.parseInt(input.nextLine());
+        a = input.nextLine();
+        b = input.nextLine();
         if (a % 2 == 0) {
-            System.out.println("Bilangan pertama Genap");
+            System.out.println("Bilangan pertama: Genap");
         } else {
-            System.out.println("Bilangan pertama Ganjil");
+            System.out.println("Bilangan pertama: Ganjil");
         }
         if (b % 2 == 0) {
-            System.out.println("Bilangan kedua Genap");
+            System.out.println("Bilangan kedua: Genap");
         } else {
-            System.out.println("Bilangan kedua Ganjil");
+            System.out.println("Bilangan kedua: Ganjil");
         }
         if (a > b) {
             System.out.println("Bilangan pertama lebih besar");

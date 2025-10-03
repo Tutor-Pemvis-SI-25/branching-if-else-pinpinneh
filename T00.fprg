@@ -4,30 +4,29 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value=""/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 03:00:17 PM"/>
-        <attribute name="created" value="SmVyZW1pO0pFUkVNSTsyMDI1LTEwLTAzOzAyOjU0OjMxIFBNOzIzMjA="/>
-        <attribute name="edited" value="SmVyZW1pO0pFUkVNSTsyMDI1LTEwLTAzOzAzOjAwOjE3IFBNOzE7MjQyNA=="/>
+        <attribute name="saved" value="2025-10-03 03:24:49 PM"/>
+        <attribute name="created" value="SmVyZW1pO0pFUkVNSTsyMDI1LTEwLTAzOzAzOjIyOjQ5IFBNOzIzMjU="/>
+        <attribute name="edited" value="SmVyZW1pO0pFUkVNSTsyMDI1LTEwLTAzOzAzOjI0OjQ5IFBNOzE7MjQzNQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="a, b" type="Integer" array="False" size=""/>
             <input variable="a"/>
             <input variable="b"/>
             <if expression="a % 2 = 0">
                 <then>
-                    <output expression="&quot;Bilangan pertama Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan pertama Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="b % 2 = 0">
                 <then>
-                    <output expression="&quot;Bilangan kedua Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan kedua Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="a &gt; b">
