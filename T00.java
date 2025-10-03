@@ -3,16 +3,16 @@ public class T00 {
 import java.util.*;
 import java.lang.Math;
 
-public class Program {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         int bil1, bil2, bilganjil, bilgenap, perkalian, terbesar, penjumlahan, jenis, total1, total2;
 
         System.out.println("Masukkan bilangan pertama:");
-        bil1 = input.nextInt();
+        bil1 = Integer.parseInt(input.nextLine());
         System.out.println("Masukkan bilangan kedua:");
-        bil2 = input.nextInt();
+        bil2 = Integer.parseInt(input.nextLine());
         total1 = bil1 % 2;
         total2 = bil2 % 2;
         if (total1 == 1) {
@@ -44,6 +44,4 @@ public class Program {
             System.out.println("bilangan berbeda");
         }
     }
-}
-
 }
